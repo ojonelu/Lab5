@@ -1,4 +1,4 @@
 package animalhierarchy;
-public interface AnimalBehaviour {
+public interface AnimalBehavior {
     void sleep();
 }
