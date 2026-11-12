@@ -27,8 +27,8 @@ public class Main {
                 ((Mammal) animal).nurseYoung();
             } else if (animal instanceof Bird) {
                 ((Bird) animal).fly();
-            } else if (animal instanceof Fish) {
-                ((Fish) animal).swim();
+            } else if (animal instanceof animalhierarchy.Fish) {
+                ((animalhierarchy.Fish) animal).swim();
             }
         }
     }
