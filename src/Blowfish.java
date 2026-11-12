@@ -1,6 +1,6 @@
 package animalhierarchy;
 
-public class Blowfish extends Fish {
+public class Blowfish extends Fish implements AnimalBehavior {
     private int spineCount;
 
     public Blowfish() {
@@ -26,6 +26,16 @@ public class Blowfish extends Fish {
     @Override
     public void getVoice() {
         System.out.println(getName() + " clicks its teeth together underwater.");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(getName() + " the Blowfish is sleeping near the ocean floor.");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Blowfish swims.");
     }
 
     public void puffUp() {

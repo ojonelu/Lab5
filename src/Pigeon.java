@@ -1,6 +1,6 @@
 package animalhierarchy;
 
-public class Pigeon extends Bird {
+public class Pigeon extends Bird implements AnimalBehavior {
     private String species;
 
     public Pigeon() {
@@ -26,6 +26,16 @@ public class Pigeon extends Bird {
     @Override
     public void getVoice() {
         System.out.println(getName() + " says: Coo Coo!");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(getName() + " the Pigeon is sleeping on a branch.");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Pigeon flies.");
     }
 
     public void deliverMessage() {

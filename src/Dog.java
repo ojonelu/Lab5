@@ -1,6 +1,6 @@
 package animalhierarchy;
 
-public class Dog extends Mammal {
+public class Dog extends Mammal implements AnimalBehavior {
     private String breed;
 
     public Dog() {
@@ -26,6 +26,16 @@ public class Dog extends Mammal {
     @Override
     public void getVoice() {
         System.out.println(getName() + " says: Woof Woof!");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(getName() + " the Dog is sleeping in its kennel.");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Dog runs.");
     }
 
     public void fetch() {
